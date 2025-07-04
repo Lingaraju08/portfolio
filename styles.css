@@ -1081,3 +1081,8 @@ nav .fa-solid{
         justify-content: center;
     }
 }
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
