@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description"
+		content="Computer Science graduate with hands-on experience in web development, machine learning, and software engineering." />
+	<meta name="keywords"
+		content="Computer Science Engineer, Python Developer, Java Developer, Django Developer, Web Developer, Portfolio" />
+
+	<meta property="og:title" content="B LINGARAJU - PORTFOLIO" />
+
+	<link rel="icon" href="CN.png" />
+	<link rel="apple-touch-icon" href="3.jpg" />
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- UNICONS -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+	<!-- SWIPER CSS -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<script src="./script.js" defer></script>
+	<title>B LINGARAJU - PORTFOLIO</title>
+	<script>
+		const theme = localStorage.getItem('theme');
+		if (theme === 'light') {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	</script>
+
+</head>
+
+<body>
+	<!-- only for keyboard users -->
+	<a class="skip-to-content" href="#main-content">Skip to content</a>
+
+	<header class="main-header">
+		<nav class="nav slide-in-top">
+			<div class="container">
+				<a href="#">
+					<img src="CN.png" alt="B LINGARAJU" class="logo" />
+					<title>Logo</title>
+				</a>
+				<ul class="nav-list">
+					<li>
+						<a href="#about" class="nav-links hover-effect">About</a>
+					</li>
+					<li>
+						<a href="#projects" class="nav-links hover-effect">Projects</a>
+					</li>
+					<li>
+						<a href="#contact" class="nav-links hover-effect">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="social-nav">
+					<li>
+						<a href="https://www.linkedin.com/in/b-lingaraju" rel="noreferrer" target="_blank" aria-label="link to linkedin profile">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+								style="fill: currentColor">
+								<circle cx="4.983" cy="5.009" r="2.188"></circle>
+								<path
+									d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
+								</path>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/Lingaraju08?tab=repositories" rel="noreferrer" target="_blank"
+							aria-label="link to github account"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+								height="18" viewBox="0 0 24 24" style="fill: currentColor">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+								</path>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.hackerrank.com/profile/lingarajub130" rel="noreferrer" target="_blank"
+							aria-label="link to hackerrank profile">
+							<!-- HackerRank SVG Icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+								style="fill: #000">
+								<g>
+									<circle cx="12" cy="12" r="12" fill="#000" />
+									<path
+										d="M16.5 7.5v9l-4.5 2.6-4.5-2.6v-9l4.5-2.6 4.5 2.6zm-1.5 1.3l-3-1.7-3 1.7v6.4l3 1.7 3-1.7V8.8zm-4.5 1.2h1.2v1.2H10V10zm2.8 0h1.2v1.2h-1.2V10zm-2.8 2.8h1.2v1.2H10v-1.2zm2.8 0h1.2v1.2h-1.2v-1.2z"
+										fill="#fff" />
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="theme-toggle">
+					<input type="checkbox" id="theme-switch" />
+					<label for="theme-switch" class="toggle-label">
+						<span class="sun">🌞</span>
+						<span class="moon">🌙</span>
+					</label>
+				</div>
+
+
+				<div class="hamburger">
+					<div class="line-menu half start"></div>
+					<div class="line-menu"></div>
+					<div class="line-menu half end"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main-content">
+		<!-- hero section -->
+		<section class="hero">
+			<div class="container">
+				<article class="hero-text bounce-in-left">
+					<div>
+						<p class="subtitle">hi there 👋🏽, i'm</p>
+						<h1 class="name">B LINGARAJU</h1>
+					</div>
+					<div>
+						<p class="intro">
+							Computer Science Engineer with experience in Java and front end developer seeking a
+							challenging
+							role in software development.
+						</p>
+
+						<div class="hero-btn-container">
+							<a href="mailto:lingarajub130@gmail.com" class="btn hire-btn">
+								Hire Me
+							</a>
+							<a href="BlingarajuResume.pdf" download="" class="btn download-link">Download
+								RESUME</a>
+						</div>
+					</div>
+				</article>
+				<img id="image1" src="profile.png" alt="coding desk" class="fade-in code" />
+			</div>
+		</section>
+
+		<!-- about section -->
+		<section class="about-me" id="about">
+			<div class="container" data-aos="fade-up">
+				<img id="image2" src="about.png" alt="B LINGARAJU" />
+				<article>
+					<p class="subtitle">Who is B Lingaraju?</p>
+					<h2 class="title">A Bit About Me</h2>
+					<div class="about-col-2">
+						<p>I am B Lingaraju, a dedicated and quick-learning full stack web developer with a strong
+							foundation in C, C++, Python and Java. I recently completed a Full Stack Web Development
+							course
+							at <b>Besant Technology</b>. Additionally, I hold certifications in Java (Basic) and CSS
+							(basic
+							) from <b>HackerRank</b>.
+							My technical
+							experience includes projects like building a Placement Management System and creating a
+							system to control a
+							PC using hand gestures. With a passion for coding and problem-solving, I am constantly
+							seeking
+							opportunities to enhance my skills and contribute to innovative projects.
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>Java</span><br>Building a Website</li>
+								<li><span>HTML5</span><br>Designing a Website</li>
+								<li><span>CSS</span><br>Styling a Website</li>
+								<li><span>JavaScript</span><br>Adding Interactivity to a Website</li>
+								<li><span>MySQL</span><br>Managing the Database</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2025</span><br><b>Internship at Besant Technology </b> <br>
+									Certified in Full Stack Web Development gaining hands-on expertise
+									in front-end, back-end, and database management.</li>
+								<li><span>2024</span><br><b>Internship at Capgemini via TNSiF Foundation</b> <br>
+									Completed a FullStack Development (FSD) course under Capgemini.</li>
+								<li><span>2023</span><br><b>Full Stack Web Development Training at TekkyBench</b> <br>
+									Successfully completed the course and was recognized as a top-performing student
+									<br>
+									Received a Letter of Appreciation (LOA) and Letter of Recommendation (LOR).
+								</li>
+								<li><span>2023</span><br><b>Python AI/ML Internship In InternLeap (Dotch Endeavours Pvt.
+										Ltd.)</b> <br>
+									Gained practical experience in Python, data processing, and model training for AI/ML
+									applications.</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2021 - 2025</span><br>Bachelor of Engineering (B.E) <br>
+									Akshaya Institute of Technology (AIT), Tumkur <br>
+									Stream: Computer Science & Engineering
+								</li>
+								<li><span>2019 - 2021</span><br>Pre-University Course (PUC) <br>
+									Sri Gavisiddeshwar Arts, Science & Commerce College, Koppal <br>
+									Stream: Science/PCMB</li>
+								<li><span>2018 - 2019</span><br>Secondary School Leaving Certificate (SSLC) <br>
+									Minority Morarji Desai Residential School, Ballari</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+
+		<!-- projects section -->
+		<section class="projects-section" id="projects">
+			<div class="container">
+				<article data-aos="fade-up">
+					<p class="subtitle">My projects</p>
+					<h2 class="title">Some Things I Built</h2>
+					<p class="info">
+						I've worked on various projects ranging from web applications to machine learning models. Here
+						are some highlights:
+					</p>
+				</article>
+				<section class="projects">
+					<!-- 01 -->
+					<article class="project">
+						<div class="project-img-slider">
+							<div class="slider-container">
+								<img src="project1a.png" alt="portfolio" title="portfolio"
+									class="active-slide" />
+								<img src="project1b.png" alt="portfolio" title="portfolio" />
+								<img src="project1c.png" alt="portfolio" title="portfolio" />
+							</div>
+							<div class="slider-dots">
+								<span class="dot active-dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div>
+							<h3>01</h3>
+							<h2>Portfolio</h2>
+							<p>
+								Developed a personal portfolio website to showcase my projects and skills using HTML5,
+								CSS3, and
+								JavaScript, focusing on responsive design and user-friendly navigation.
+							</p>
+							<ul class="tech-stack">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+							</ul>
+						</div>
+					</article>
+
+					<!-- 02 -->
+					<article class="project">
+						<div class="project-img-slider">
+							<div class="slider-container">
+								<img src="project2a.png" alt="Placement Management System"
+									title="Placement Management System" class="active-slide" />
+								<img src="project2b.png" alt="Placement Management System"
+									title="Placement Management System" />
+							</div>
+							<div class="slider-dots">
+								<span class="dot active-dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div>
+							<h3>02</h3>
+							<h2>Placement Management System</h2>
+							<p>
+								Built a Java-based application with MySQL database integration to efficiently manage
+								placement-related
+								data, implementing full CRUD (Create, Read, Update, Delete) operations for
+								administrators and users.
+							</p>
+							<ul class="tech-stack">
+								<li>Java</li>
+								<li>MySQL</li>
+								<li>HTML/CSS</li>
+							</ul>
+							<ul class="project-links">
+								<li>
+									<a href="https://github.com/Lingaraju08/Placement-Management-System-using-CRUD"
+										target="_blank" rel="noreferrer" class="hover-effect">GitHub →</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<!-- 03 -->
+					<article class="project">
+						<div class="project-img-slider">
+							<div class="slider-container">
+								<img src="project3a.png" alt="Hand Gesture-based PC Control"
+									title="Hand Gesture-based PC Control" class="active-slide" />
+								<img src="project3b.png" alt="Hand Gesture-based PC Control"
+									title="Hand Gesture-based PC Control" />
+
+							</div>
+							<div class="slider-dots">
+								<span class="dot active-dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div>
+							<h3>03</h3>
+							<h2>Hand Gesture-based PC Control</h2>
+							<p>
+								A Hand Gesture-based PC Control System enables users to perform various computer
+								operations by recognizing predefined hand gestures captured by a webcam or external
+								camera. This technology improves accessibility and provides an intuitive human-computer
+								interaction experience.
+
+
+							</p>
+							<ul class="tech-stack">
+								<li>python</li>
+								<li>AI/ML</li>
+								<li>OpenCV</li>
+							</ul>
+						    <ul class="project-links">
+								<li>
+									<a href="https://github.com/Lingaraju08/Hand-Gesture-based-PC-Control" target="_blank" rel="noreferrer" class="hover-effect">GitHub →</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<div>
+						<a href="https://github.com/Lingaraju08?tab=repositories" class="mail-link hover-effect">view
+							more →</a>
+					</div>
+				</section>
+			</div>
+		</section>
+		<!-- contact section -->
+		<section class="contact" data-aos="fade-up">
+			<div class="container">
+				<p class="subtitle">Have a project? or just looking to hire?</p>
+				<h2 class="title">Let's Work Together</h2>
+				<p class="info">
+					Feel free to reach out if you're looking to hire, just want to
+					connect or see if we can build something amazing together.
+				</p>
+
+				<!-- Data Entry Form -->
+				<form class="contact-form">
+					<div>
+						<label for="contact-name">Name</label>
+						<input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+					</div>
+					<div>
+						<label for="contact-email">Email</label>
+						<input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+					</div>
+					<div>
+						<label for="contact-message">Comment</label>
+						<textarea id="contact-message" name="message" rows="6" placeholder="Your Message"
+							required></textarea>
+					</div>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer" id="contact">
+		<div class="container">
+			<p>&copy; <span id="date"></span> B LINGARAJU</p>
+			<div>
+				<ul>
+					<li>
+						<a href="https://github.com/Lingaraju08?tab=repositories" rel="noreferrer" target="_blank"
+							class="hover-effect">github</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/b-lingaraju" rel="noreferrer" target="_blank"
+							class="hover-effect">linkedin</a>
+					</li>
+					<li>
+						<a href="https://www.hackerrank.com/profile/lingarajub130" rel="noreferrer" target="_blank"
+							class="hover-effect">Hacker Rank</a>
+					</li>
+				</ul>
+				<a href="#top" class="top">
+					<p class="scroll">scroll <span>to top</span></p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						style="fill: currentColor">
+						<title>scroll to top</title>
+						<path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path>
+						<path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SWIPER JS -->
+	<script src="js/swiper-bundle.min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname) {
+			for (let tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (let tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+	<script>
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu() {
+			sidemenu.style.right = "0";
+		}
+		function closemenu() {
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+</body>
+
+</html>
